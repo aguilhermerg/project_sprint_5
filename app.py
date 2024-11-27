@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv('../data/vehicles.csv')  # lendo os dados
+car_data = pd.read_csv('vehicles.csv')  # lendo os dados
 
 st.header("Criando gráficos sobre dados de automóveis")
 
@@ -30,3 +30,4 @@ if build_scatter_plot:
     fig = px.scatter(car_data, x="odometer")
 
     st.plotly_chart(fig, use_container_width=True)
+
