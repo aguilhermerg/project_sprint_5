@@ -12,7 +12,7 @@ build_histogram = st.checkbox("Criar histograma")
 if build_histogram:  # se a caixa de selecao for selecionada
     # escrever uma mensagem
     st.write(
-        "Criando um histograma para o conjunto de dados de anúncios de vendas de carro")
+        "Criando um histograma para avaliar odometros em milhas")
 
     # criar um histograma
     fig = px.histogram(car_data, x="odometer")
@@ -25,9 +25,8 @@ build_scatter_plot = st.checkbox("Criar gráfico de dispersão")
 
 if build_scatter_plot:
     st.write(
-        "Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carro")
+        "Criando um gráfico de dispersão para comparar a relação odomometro X preço do veiculo")
 
-    fig = px.scatter(car_data, x="odometer")
+    fig = px.scatter(car_data, x="odometer", y="price")
 
     st.plotly_chart(fig, use_container_width=True)
-
