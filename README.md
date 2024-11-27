@@ -1,0 +1,2 @@
+# project_sprint_5
+Repositório para o projeto 5 do bootcamp da Tripleten, o objetivo aqui é criar e gerenciar ambientes virtuais de Python, desenvolver um aplicativo web e implantá-lo em um serviço de nuvem que o tornará acessível ao público.
